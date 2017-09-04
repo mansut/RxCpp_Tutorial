@@ -1,0 +1,29 @@
+# CMake generation dependency list for this directory.
+C:/Users/kshoop/Desktop/source/rxcpp/Rx/v2/examples/awaitable/CMakeLists.txt
+C:/Users/kshoop/Desktop/source/rxcpp/Rx/v2/examples/awaitable/vs/CMakeFiles/3.2.3/CMakeSystem.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Users/kshoop/Desktop/source/rxcpp/Rx/v2/examples/awaitable/vs/CMakeFiles/3.2.3/CMakeCCompiler.cmake
+C:/Users/kshoop/Desktop/source/rxcpp/Rx/v2/examples/awaitable/vs/CMakeFiles/3.2.3/CMakeCXXCompiler.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeGenericSystem.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/Windows.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/WindowsPaths.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeCInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC.cmake
+C:/Users/kshoop/Desktop/source/rxcpp/Rx/v2/examples/awaitable/vs/CMakeFiles/3.2.3/CMakeRCCompiler.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeRCInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeCXXInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeCommonLanguageInclude.cmake
+C:/Users/kshoop/Desktop/source/rxcpp/projects/CMake/shared.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindThreads.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CheckIncludeFiles.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CheckLibraryExists.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CheckSymbolExists.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="rxcpp_init">
+  <PropertyGroup Label="Default initializers for properties">
+    <Linkage-rxcpp Condition="'$(Linkage-rxcpp)' == ''">dynamic</Linkage-rxcpp>
+    <CallingConvention-rxcpp Condition="'$(CallingConvention-rxcpp)' == ''">cdecl</CallingConvention-rxcpp>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>HAS_RXCPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../..//build/native/include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../..//build/native/include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)\default-propertiesui.xml" />
+  </ItemGroup>
+  <UsingTask TaskName="rxcpp_Contains" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" TaskFactory="CodeTaskFactory">
+    <ParameterGroup>
+      <Text Output="false" ParameterType="System.String" />
+      <Library Output="false" Required="true" ParameterType="System.String" />
+      <Value Output="false" Required="true" ParameterType="System.String" />
+      <Result Output="true" ParameterType="System.String" />
+    </ParameterGroup>
+    <Task>
+      <Code>Result = ((Text ?? "").Split(';').Contains(Library) ) ? Value : String.Empty;</Code>
+    </Task>
+  </UsingTask>
+  <Target Name="rxcpp_init">
+    <rxcpp_Contains Text="Linkage-dynamic" Library="rxcpp" Value="dynamic" Condition="'$(Linkage-rxcpp)'==''">
+      <Output TaskParameter="Result" PropertyName="Linkage-rxcpp" />
+    </rxcpp_Contains>
+    <rxcpp_Contains Text="Linkage-static" Library="rxcpp" Value="static" Condition="'$(Linkage-rxcpp)'==''">
+      <Output TaskParameter="Result" PropertyName="Linkage-rxcpp" />
+    </rxcpp_Contains>
+    <rxcpp_Contains Text="Linkage-ltcg" Library="rxcpp" Value="ltcg" Condition="'$(Linkage-rxcpp)'==''">
+      <Output TaskParameter="Result" PropertyName="Linkage-rxcpp" />
+    </rxcpp_Contains>
+    <rxcpp_Contains Text="Linkage-sxs" Library="rxcpp" Value="sxs" Condition="'$(Linkage-rxcpp)'==''">
+      <Output TaskParameter="Result" PropertyName="Linkage-rxcpp" />
+    </rxcpp_Contains>
+    <rxcpp_Contains Text="CallingConvention-cdecl" Library="rxcpp" Value="cdecl" Condition="'$(CallingConvention-rxcpp)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConvention-rxcpp" />
+    </rxcpp_Contains>
+    <rxcpp_Contains Text="CallingConvention-stdcall" Library="rxcpp" Value="stdcall" Condition="'$(CallingConvention-rxcpp)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConvention-rxcpp" />
+    </rxcpp_Contains>
+    <rxcpp_Contains Text="CallingConvention-fastcall" Library="rxcpp" Value="fastcall" Condition="'$(CallingConvention-rxcpp)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConvention-rxcpp" />
+    </rxcpp_Contains>
+    <rxcpp_Contains Text="CallingConvention-thiscall" Library="rxcpp" Value="thiscall" Condition="'$(CallingConvention-rxcpp)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConvention-rxcpp" />
+    </rxcpp_Contains>
+    <rxcpp_Contains Text="CallingConvention-clrcall" Library="rxcpp" Value="clrcall" Condition="'$(CallingConvention-rxcpp)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConvention-rxcpp" />
+    </rxcpp_Contains>
+  </Target>
+</Project>

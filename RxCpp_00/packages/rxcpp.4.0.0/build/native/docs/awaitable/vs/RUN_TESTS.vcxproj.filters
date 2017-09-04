@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\kshoop\Desktop\source\rxcpp\Rx\v2\examples\awaitable\vs\CMakeFiles\cc20ff3bf38f6c955d366b241a18a9c5\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8D4825E6-CCAC-43BA-97E9-0253A09E382D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
